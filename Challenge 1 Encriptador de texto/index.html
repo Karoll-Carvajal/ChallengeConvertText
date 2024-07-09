@@ -1,0 +1,48 @@
+<html lang="en">
+    <div></div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENCIRPTADOR DE TEXTO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    
+        <img id="imagenLogo" src="imagenes/LogoLogoAlura.png" alt="aluraLogo">
+    
+    
+    <main>
+        <div class="inPut">
+                <textarea id="Texto-a-encriptar" cols="70" rows="10" required placeholder="Ingrese el texto"></textarea>
+                <label id="solo-minusculas"><img id="img-interrogacion" src="imagenes/Group.png" alt="signo-interrogacion">
+                    Solo letras minusculas y sin acentos.</label>
+                <div class="div-botones">
+                    
+                    <button onclick="encriptarTexto()" id="btn-encriptar" >Encriptar </button>
+                    <button onclick="desEncriptarTexto()" id="btn-desencriptar">Desencriptar</button>
+
+                </div>
+        </div>
+
+        <div class="outPut">
+
+            <textarea id="texto-resultado">
+
+            </textarea>
+
+            <img id="img-sinMensaje" src="imagenes/Muñeco.png" alt="muneco-buscando">
+            <h1 id="mensajeUno"> Ningun mensaje fue encontrado</h1>
+            <p id="pIngresaTexto">Ingresa el texto que desees encriptar o Desencriptar</p>
+
+            <button onclick="copiar()" id="boton-copiar">Copiar</button>
+
+        </div>
+                         
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
